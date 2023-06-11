@@ -1,0 +1,50 @@
+.story {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .1);
+    background-color: rgba($color-white, .6);
+    border-radius: 3px;
+    padding: 6rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
+
+    &__shape {
+        position: relative;
+        width: 15rem;
+        height: 15rem;
+        float: left; // make the content float arround it
+        shape-outside: circle(50% at 50% 50%); // text circle float arround
+
+        clip-path: circle(50% at 50% 50%); // circle shape
+        transform: translateX(-3rem);
+    }
+
+    &__img {
+        height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        transition: all .5s;
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        transition: all .5s;
+        opacity: 0;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%);
+    }
+}

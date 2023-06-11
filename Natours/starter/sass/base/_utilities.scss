@@ -1,23 +1,35 @@
 .u-center-text {
-  text-align: center;
+  text-align: center !important;
 }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem !important;
+}
+
+.u-margin-top-small {
+  margin-top: 2rem !important;
 }
 
 .u-left-text {
-  text-align: left;
+  text-align: left !important;
 }
 
 .u-skew-y-7 {
-  transform: skewY(7deg);
+  transform: skewY(7deg) !important;
 }
